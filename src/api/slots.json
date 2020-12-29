@@ -1,0 +1,29 @@
+{
+  "2020-09-28": [
+    "Morning 9AM to 11AM",
+    "Afternoon 2PM to 4PM",
+    "Evening 6PM to 8PM"
+  ],
+  "2020-09-29": [
+    "Morning 8AM to 10AM",
+    "Afternoon 2PM to 4PM",
+    "Evening 5PM to 7PM"
+  ],
+  "2020-09-30": [],
+  "2020-10-01": [
+    "Morning 9AM to 11AM",
+    "Afternoon 1PM to 3PM",
+    "Evening 6PM to 8PM"
+  ],
+  "2020-10-02": [
+    "Morning 10AM to 12AM",
+    "Afternoon 12PM to 2PM",
+    "Evening 6PM to 8PM"
+  ],
+  "2020-10-03": [
+    "Morning 9AM to 11AM",
+    "Afternoon 3PM to 5PM",
+    "Evening 7PM to 9PM"
+  ],
+  "2020-10-04": []
+}

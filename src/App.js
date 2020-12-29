@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Landing from './components/Landing/Landing';
+import MovieList from './containers/MovieList/MovieList';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import ViewMovie from './containers/ViewMovie/ViewMovie';
+import  Navbar from './components/Navbar/Navbar';
+import ConfirmTicket from './containers/ConfirmTicket/ConfirmTicket';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+    <Switch>
+        <Route
+            exact path="/"
+            component={ MovieList }
+        ></Route>
+        <Route 
+            path="/ViewMovie/:MovieId"
+            component={ ViewMovie }
+        ></Route>
+        <Route 
+            path="/confirm"
+            component={ ConfirmTicket }
+        ></Route>
+    </Switch>
+</Router>
   );
 }
 
